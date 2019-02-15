@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="anands-MacBook-Air.local" name="Regression.VerifyTitle" tests="1" failures="0" timestamp="15 Feb 2019 09:47:37 GMT" time="122.022" errors="0">
-  <testcase name="ClickEditTab" time="121.995" classname="Regression.VerifyTitle"/>
+<testsuite hostname="anands-MacBook-Air.local" name="Regression.VerifyTitle" tests="2" failures="0" timestamp="15 Feb 2019 11:51:56 GMT" time="28.986" errors="0">
+  <testcase name="CreateClientFromMenu" time="6.863" classname="Regression.VerifyTitle"/>
+  <testcase name="CreateContactFromMenuTest" time="8.396" classname="Regression.VerifyTitle"/>
 </testsuite>

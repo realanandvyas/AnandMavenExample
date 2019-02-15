@@ -84,10 +84,11 @@ public class VerifyTitle {
             driver.findElement(By.name("person__job_title__job_title")).sendKeys("Java Developer");
 
             driver.findElement(By.xpath(".//*[contains(text(),'Client')]/../../table/tbody/tr/td[2]/div")).click();
-            driver.findElement(By.xpath("//*[contains(text(), 'Lloyd')]")).click();
-
-            driver.findElement(By.name("create")).click();
             Thread.sleep(2000);
+//            driver.findElement(By.xpath("//*[contains(text(), 'Lloyd')]")).click();
+//            Thread.sleep(2000);
+            driver.findElement(By.name("create")).click();
+            Thread.sleep(5000);
             System.out.println("END - CreateContactFromMenuTest");
     }
 
