@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="anands-MacBook-Air.local" name="Regression.VerifyTitle" tests="1" failures="0" timestamp="15 Feb 2019 09:24:20 GMT" time="5.485" errors="0">
-  <testcase name="ClickEditTab" time="5.466" classname="Regression.VerifyTitle"/>
+<testsuite hostname="anands-MacBook-Air.local" name="Regression.VerifyTitle" tests="1" failures="1" timestamp="15 Feb 2019 09:35:55 GMT" time="5.153" errors="0">
+  <testcase name="ClickEditTab" time="5.133" classname="Regression.VerifyTitle">
+    <failure type="junit.framework.AssertionFailedError">
+      <![CDATA[junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Regression.VerifyTitle.ClickEditTab(VerifyTitle.java:15)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
 </testsuite>
