@@ -68,29 +68,29 @@ public class VerifyTitle {
             Thread.sleep(4000);
     }
 
-    @Test(priority = 1)
-    public void CreateContactFromMenuTest() throws InterruptedException {
-            System.out.println("START - CreateContactFromMenuTest");
-            // driver.navigate().to(testURL);
-            WebElement findcreateCandidateButton = driver
-                            .findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[1]"));
-            findcreateCandidateButton.click();
-
-            WebElement findcreateCandidateMenuButton = driver.findElement(By.xpath(".//*[contains(text(),'Add Contact')]"));
-            findcreateCandidateMenuButton.click();
-
-            driver.findElement(By.name("person__first_name")).sendKeys("Anand");
-            driver.findElement(By.name("person__last_name")).sendKeys("Vyas");
-            driver.findElement(By.name("person__job_title__job_title")).sendKeys("Java Developer");
-
-            driver.findElement(By.xpath(".//*[contains(text(),'Client')]/../../table/tbody/tr/td[2]/div")).click();
-            Thread.sleep(2000);
-//            driver.findElement(By.xpath("//*[contains(text(), 'Lloyd')]")).click();
+//    @Test(priority = 1)
+//    public void CreateContactFromMenuTest() throws InterruptedException {
+//            System.out.println("START - CreateContactFromMenuTest");
+//            // driver.navigate().to(testURL);
+//            WebElement findcreateCandidateButton = driver
+//                            .findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[1]"));
+//            findcreateCandidateButton.click();
+//
+//            WebElement findcreateCandidateMenuButton = driver.findElement(By.xpath(".//*[contains(text(),'Add Contact')]"));
+//            findcreateCandidateMenuButton.click();
+//
+//            driver.findElement(By.name("person__first_name")).sendKeys("Anand");
+//            driver.findElement(By.name("person__last_name")).sendKeys("Vyas");
+//            driver.findElement(By.name("person__job_title__job_title")).sendKeys("Java Developer");
+//
+//            driver.findElement(By.xpath(".//*[contains(text(),'Client')]/../../table/tbody/tr/td[2]/div")).click();
 //            Thread.sleep(2000);
-            driver.findElement(By.name("create")).click();
-            Thread.sleep(5000);
-            System.out.println("END - CreateContactFromMenuTest");
-    }
+////            driver.findElement(By.xpath("//*[contains(text(), 'Lloyd')]")).click();
+////            Thread.sleep(2000);
+//            driver.findElement(By.name("create")).click();
+//            Thread.sleep(5000);
+//            System.out.println("END - CreateContactFromMenuTest");
+//    }
 
     // @Test(priority = 2)
     // public void CreateCandidateFromMenu() throws InterruptedException {
