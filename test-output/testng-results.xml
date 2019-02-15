@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28986" started-at="2019-02-15T17:21:27Z" finished-at="2019-02-15T17:21:56Z">
+  <suite name="Default suite" duration-ms="37747" started-at="2019-02-15T17:42:41Z" finished-at="2019-02-15T17:43:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28986" started-at="2019-02-15T17:21:27Z" finished-at="2019-02-15T17:21:56Z">
+    <test name="Default test" duration-ms="37747" started-at="2019-02-15T17:42:41Z" finished-at="2019-02-15T17:43:19Z">
       <class name="Regression.VerifyTitle">
-        <test-method status="PASS" signature="setupTest()" name="setupTest" is-config="true" duration-ms="13108" started-at="2019-02-15T17:21:27Z" finished-at="2019-02-15T17:21:41Z">
+        <test-method status="PASS" signature="setupTest()" name="setupTest" is-config="true" duration-ms="19815" started-at="2019-02-15T17:42:41Z" finished-at="2019-02-15T17:43:01Z">
         </test-method>
-        <test-method status="PASS" signature="CreateClientFromMenu()" name="CreateClientFromMenu" duration-ms="6863" started-at="2019-02-15T17:21:41Z" finished-at="2019-02-15T17:21:47Z">
+        <test-method status="PASS" signature="CreateClientFromMenu()" name="CreateClientFromMenu" duration-ms="7271" started-at="2019-02-15T17:43:01Z" finished-at="2019-02-15T17:43:08Z">
         </test-method>
-        <test-method status="PASS" signature="CreateContactFromMenuTest()" name="CreateContactFromMenuTest" duration-ms="8396" started-at="2019-02-15T17:21:47Z" finished-at="2019-02-15T17:21:56Z">
+        <test-method status="PASS" signature="CreateClientShortcutButton()" name="CreateClientShortcutButton" duration-ms="10010" started-at="2019-02-15T17:43:08Z" finished-at="2019-02-15T17:43:18Z">
         </test-method>
-        <test-method status="PASS" signature="teardownTest()" name="teardownTest" is-config="true" duration-ms="602" started-at="2019-02-15T17:21:56Z" finished-at="2019-02-15T17:21:56Z">
+        <test-method status="PASS" signature="teardownTest()" name="teardownTest" is-config="true" duration-ms="621" started-at="2019-02-15T17:43:18Z" finished-at="2019-02-15T17:43:19Z">
         </test-method>
       </class>
     </test>

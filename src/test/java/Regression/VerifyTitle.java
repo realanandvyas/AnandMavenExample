@@ -67,6 +67,22 @@ public class VerifyTitle {
             System.out.println("END - CreateClientFromMenu");
             Thread.sleep(4000);
     }
+    
+    @Test(priority = 1)
+    public void CreateClientShortcutButton() throws InterruptedException {
+    System.out.println("START - CreateClientShortcutButton");
+    Thread.sleep(5000);
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	WebElement findcreateCandidateButton = driver.findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[5]"));
+	findcreateCandidateButton.click();
+	
+	driver.findElement(By.name("name")).sendKeys("Lloyd Harrington Australia");
+	driver.findElement(By.name("worksites")).sendKeys("Sydney");
+	
+	driver.findElement(By.name("create")).click();
+	System.out.println("END - CreateClientShortcutButton");
+	Thread.sleep(4000);
+    }
 
 //    @Test(priority = 1)
 //    public void CreateContactFromMenuTest() throws InterruptedException {
