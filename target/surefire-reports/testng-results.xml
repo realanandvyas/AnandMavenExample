@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5485" started-at="2019-02-15T14:54:14Z" finished-at="2019-02-15T14:54:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5485" started-at="2019-02-15T14:54:14Z" finished-at="2019-02-15T14:54:19Z">
+      <class name="Regression.VerifyTitle">
+        <test-method status="PASS" signature="ClickEditTab()" name="ClickEditTab" duration-ms="5466" started-at="2019-02-15T14:54:14Z" finished-at="2019-02-15T14:54:19Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
