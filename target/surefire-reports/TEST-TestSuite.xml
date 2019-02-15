@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="5.14" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="16.769" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
@@ -63,15 +63,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="ClickEditTab" classname="Regression.VerifyTitle" time="5.14">
-    <failure type="junit.framework.AssertionFailedError:">junit.framework.AssertionFailedError: null
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at Regression.VerifyTitle.ClickEditTab(VerifyTitle.java:15)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8) on port 3536
-Only local connections are allowed.
-]]></system-err>
-  </testcase>
+  <testcase name="ClickEditTab" classname="Regression.VerifyTitle" time="16.769"/>
 </testsuite>
