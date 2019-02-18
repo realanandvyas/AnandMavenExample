@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37747" started-at="2019-02-15T17:42:41Z" finished-at="2019-02-15T17:43:19Z">
+  <suite name="Default suite" duration-ms="42955" started-at="2019-02-18T09:05:59Z" finished-at="2019-02-18T09:06:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37747" started-at="2019-02-15T17:42:41Z" finished-at="2019-02-15T17:43:19Z">
+    <test name="Default test" duration-ms="42955" started-at="2019-02-18T09:05:59Z" finished-at="2019-02-18T09:06:42Z">
       <class name="Regression.VerifyTitle">
-        <test-method status="PASS" signature="setupTest()" name="setupTest" is-config="true" duration-ms="19815" started-at="2019-02-15T17:42:41Z" finished-at="2019-02-15T17:43:01Z">
+        <test-method status="PASS" signature="setupTest()" name="setupTest" is-config="true" duration-ms="19228" started-at="2019-02-18T09:05:59Z" finished-at="2019-02-18T09:06:18Z">
         </test-method>
-        <test-method status="PASS" signature="CreateClientFromMenu()" name="CreateClientFromMenu" duration-ms="7271" started-at="2019-02-15T17:43:01Z" finished-at="2019-02-15T17:43:08Z">
+        <test-method status="PASS" signature="CreateClientFromMenu()" name="CreateClientFromMenu" duration-ms="6883" started-at="2019-02-18T09:06:18Z" finished-at="2019-02-18T09:06:25Z">
         </test-method>
-        <test-method status="PASS" signature="CreateClientShortcutButton()" name="CreateClientShortcutButton" duration-ms="10010" started-at="2019-02-15T17:43:08Z" finished-at="2019-02-15T17:43:18Z">
+        <test-method status="PASS" signature="CreateClientShortcutButton()" name="CreateClientShortcutButton" duration-ms="9984" started-at="2019-02-18T09:06:25Z" finished-at="2019-02-18T09:06:35Z">
         </test-method>
-        <test-method status="PASS" signature="teardownTest()" name="teardownTest" is-config="true" duration-ms="621" started-at="2019-02-15T17:43:18Z" finished-at="2019-02-15T17:43:19Z">
+        <test-method status="PASS" signature="CreateCandidateFromMenu()" name="CreateCandidateFromMenu" duration-ms="6170" started-at="2019-02-18T09:06:35Z" finished-at="2019-02-18T09:06:42Z">
+        </test-method>
+        <test-method status="PASS" signature="teardownTest()" name="teardownTest" is-config="true" duration-ms="663" started-at="2019-02-18T09:06:42Z" finished-at="2019-02-18T09:06:42Z">
         </test-method>
       </class>
     </test>
