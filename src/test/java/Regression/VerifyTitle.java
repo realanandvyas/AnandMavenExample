@@ -108,6 +108,23 @@ public class VerifyTitle {
 
     }
     
+    
+    @Test(priority =3 )
+    public void CreateCandidateShortcutButton() throws InterruptedException {
+    	System.out.println("START - CreateCandidateShortcutButton");
+    	WebElement findcreateCandidateButton = driver
+				.findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[2]"));
+		findcreateCandidateButton.click();
+		
+    	driver.findElement(By.name("person__first_name")).sendKeys("Anand");
+		driver.findElement(By.name("person__last_name")).sendKeys("Vyas");
+	
+		driver.findElement(By.xpath(".//*[contains(text(),'Job Title:')]/following::input[1]")).sendKeys("SE");
+		driver.findElement(By.name("create")).click();
+		System.out.println("END - CreateCandidateShortcutButton");
+
+    }
+    
 
 //    @Test(priority = 1)
 //    public void CreateContactFromMenuTest() throws InterruptedException {
