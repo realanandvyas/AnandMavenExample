@@ -11,6 +11,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 public class VerifyTitle {
 	
 	 // ----------------Global Variables----------
@@ -111,23 +113,55 @@ public class VerifyTitle {
     
     @Test(priority =3 )
     public void CreateCandidateShortcutButton() throws InterruptedException {
-    	System.out.println("START - CreateCandidateShortcutButton");
     	Thread.sleep(5000);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-    	WebElement findcreateCandidateButton = driver
-    			.findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[1]"));
-    	findcreateCandidateButton.click();
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    	
+    	
+    	Faker faker = new Faker();
+    	String clientName = faker.name().firstName();
+    	String officeLocation = faker.name().lastName();
+    	String updateClientName = faker.name().firstName();
 
-    	WebElement findcreateCandidateMenuButton = driver
-    			.findElement(By.xpath(".//*[contains(text(),'Add Candidate')]/../div"));
-    	findcreateCandidateMenuButton.click();
-		
-    	driver.findElement(By.name("person__first_name")).sendKeys("Anand");
-		driver.findElement(By.name("person__last_name")).sendKeys("Vyas");
-	
-		driver.findElement(By.xpath(".//*[contains(text(),'Job Title:')]/following::input[1]")).sendKeys("SE");
+		WebElement findcreateCandidateButton = driver
+				.findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[5]"));
+		findcreateCandidateButton.click();
+
+		driver.findElement(By.name("name")).sendKeys(clientName);
+		driver.findElement(By.name("worksites")).sendKeys(officeLocation);
+
 		driver.findElement(By.name("create")).click();
-		System.out.println("END - CreateCandidateShortcutButton");
+
+//		// Validating client creation
+//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//		WebElement msg = driver
+//				.findElement(By.cssSelector(".x-header-text.x-window-header-text.x-window-header-text-default"));
+//		String text = msg.getText();
+//		System.out.println(text);
+//		String expectedText = "ADD CLIENT";
+//		AssertJUnit.assertEquals(text, expectedText);
+
+		// Searching newly created client
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(
+				".//*[@class='x-container dk-main-header-quick-search x-box-item x-container-default x-box-layout-ct']/div/div/table/tbody/tr/td/table/tbody/tr/td/input"))
+				.sendKeys(clientName);
+
+		driver.findElement(By.xpath(".//*[@class='x-boundlist-item'][1]")).click();
+		Thread.sleep(3000);
+
+		driver.findElement(By.xpath(".//*[contains(text(),'Active')]")).click();
+		Thread.sleep(3000);
+
+		driver.findElement(By.xpath(".//*[contains(text(),'Edit')]")).click();
+		Thread.sleep(2000);
+		System.out.println("START - UpdateClientName");
+		Thread.sleep(5000);
+
+		driver.findElement(By.name("name")).clear();
+		driver.findElement(By.name("name")).sendKeys(updateClientName);
+		driver.findElement(By.name("save")).click();
+		Thread.sleep(3000);
+
 
     }
     
