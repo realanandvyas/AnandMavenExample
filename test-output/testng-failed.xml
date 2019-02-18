@@ -5,8 +5,8 @@
     <classes>
       <class name="Regression.VerifyTitle">
         <methods>
-          <include name="CreateContactFromMenuTest"/>
           <include name="setupTest"/>
+          <include name="CreateCandidateShortcutButton"/>
           <include name="teardownTest"/>
         </methods>
       </class>

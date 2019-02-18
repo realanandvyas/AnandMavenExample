@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42955" started-at="2019-02-18T09:05:59Z" finished-at="2019-02-18T09:06:42Z">
+  <suite name="Default suite" duration-ms="55387" started-at="2019-02-18T09:24:36Z" finished-at="2019-02-18T09:25:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42955" started-at="2019-02-18T09:05:59Z" finished-at="2019-02-18T09:06:42Z">
+    <test name="Default test" duration-ms="55387" started-at="2019-02-18T09:24:36Z" finished-at="2019-02-18T09:25:31Z">
       <class name="Regression.VerifyTitle">
-        <test-method status="PASS" signature="setupTest()" name="setupTest" is-config="true" duration-ms="19228" started-at="2019-02-18T09:05:59Z" finished-at="2019-02-18T09:06:18Z">
+        <test-method status="PASS" signature="setupTest()" name="setupTest" is-config="true" duration-ms="14768" started-at="2019-02-18T09:24:36Z" finished-at="2019-02-18T09:24:51Z">
         </test-method>
-        <test-method status="PASS" signature="CreateClientFromMenu()" name="CreateClientFromMenu" duration-ms="6883" started-at="2019-02-18T09:06:18Z" finished-at="2019-02-18T09:06:25Z">
+        <test-method status="PASS" signature="CreateClientFromMenu()" name="CreateClientFromMenu" duration-ms="17610" started-at="2019-02-18T09:24:51Z" finished-at="2019-02-18T09:25:08Z">
         </test-method>
-        <test-method status="PASS" signature="CreateClientShortcutButton()" name="CreateClientShortcutButton" duration-ms="9984" started-at="2019-02-18T09:06:25Z" finished-at="2019-02-18T09:06:35Z">
+        <test-method status="PASS" signature="CreateClientShortcutButton()" name="CreateClientShortcutButton" duration-ms="10022" started-at="2019-02-18T09:25:08Z" finished-at="2019-02-18T09:25:19Z">
         </test-method>
-        <test-method status="PASS" signature="CreateCandidateFromMenu()" name="CreateCandidateFromMenu" duration-ms="6170" started-at="2019-02-18T09:06:35Z" finished-at="2019-02-18T09:06:42Z">
+        <test-method status="PASS" signature="CreateCandidateFromMenu()" name="CreateCandidateFromMenu" duration-ms="6093" started-at="2019-02-18T09:25:19Z" finished-at="2019-02-18T09:25:25Z">
         </test-method>
-        <test-method status="PASS" signature="teardownTest()" name="teardownTest" is-config="true" duration-ms="663" started-at="2019-02-18T09:06:42Z" finished-at="2019-02-18T09:06:42Z">
+        <test-method status="PASS" signature="CreateCandidateShortcutButton()" name="CreateCandidateShortcutButton" duration-ms="6241" started-at="2019-02-18T09:25:25Z" finished-at="2019-02-18T09:25:31Z">
+        </test-method>
+        <test-method status="PASS" signature="teardownTest()" name="teardownTest" is-config="true" duration-ms="632" started-at="2019-02-18T09:25:31Z" finished-at="2019-02-18T09:25:31Z">
         </test-method>
       </class>
     </test>

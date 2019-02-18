@@ -112,9 +112,15 @@ public class VerifyTitle {
     @Test(priority =3 )
     public void CreateCandidateShortcutButton() throws InterruptedException {
     	System.out.println("START - CreateCandidateShortcutButton");
+    	Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     	WebElement findcreateCandidateButton = driver
-				.findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[2]"));
-		findcreateCandidateButton.click();
+    			.findElement(By.xpath("//*[@id=\"dk-main-header-innerCt\"]/div/a[1]"));
+    	findcreateCandidateButton.click();
+
+    	WebElement findcreateCandidateMenuButton = driver
+    			.findElement(By.xpath(".//*[contains(text(),'Add Candidate')]/../div"));
+    	findcreateCandidateMenuButton.click();
 		
     	driver.findElement(By.name("person__first_name")).sendKeys("Anand");
 		driver.findElement(By.name("person__last_name")).sendKeys("Vyas");
